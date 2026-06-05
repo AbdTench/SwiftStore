@@ -25,7 +25,8 @@ public struct NBSheetButton: View {
                 )
                 .bold()
                 .frame(height: 50)
-                .glassEffect(.regular.tint(.accentColor.opacity(0.9)).interactive(), in: .rect(cornerRadius: 28))
+                .background(Color.accentColor.opacity(0.9))
+                .clipShape(RoundedRectangle(cornerRadius: 28))
                 .padding()
         } else {
             Text(_title)
