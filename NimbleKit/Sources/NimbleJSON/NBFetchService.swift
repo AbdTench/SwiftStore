@@ -14,7 +14,7 @@ public class NBFetchService {
 		case invalidURL
 		case networkError(Error)
 		case noData
-		case parsingError(Any)
+		case parsingError(any Sendable)
 		
 		public var errorDescription: String? {
 			switch self {
